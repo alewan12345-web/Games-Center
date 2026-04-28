@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Typing Rush</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+  <main class="container game-page">
+    <section class="hero small">
+      <p class="tag">TYPING RUSH</p>
+      <h1>Typing Rush</h1>
+      <p class="lead">Type as many words as possible in 45 seconds.</p>
+    </section>
+    <section class="game-shell">
+      <div class="hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Time: <strong id="time">45</strong>s</span>
+      </div>
+      <div class="typing-panel">
+        <p class="target-word" id="target-word">Press Start</p>
+        <input id="typing-input" class="typing-input" type="text" autocomplete="off" placeholder="Type here..." />
+      </div>
+      <div class="controls">
+        <button id="start" class="btn">Start</button>
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/typing-rush.js"></script>
+</body>
+</html>

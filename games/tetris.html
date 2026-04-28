@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Block Drop X</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+
+  <main class="container game-page">
+    <section class="hero small">
+      <p class="tag">BLOCK DROP X</p>
+      <h1>Tetris</h1>
+      <p class="lead">Arrow keys to move, up to rotate, down to drop faster.</p>
+    </section>
+
+    <section class="game-shell">
+      <div class="hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Lines: <strong id="lines">0</strong></span>
+      </div>
+      <canvas id="tetris-canvas" width="300" height="600" aria-label="Tetris game board"></canvas>
+      <div class="controls">
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/tetris.js"></script>
+</body>
+</html>

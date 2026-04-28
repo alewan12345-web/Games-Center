@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Cosmic Math Reactor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+
+  <main class="container game-page" id="arcade-root" data-mode="math" data-difficulty="hard" data-title="Cosmic Math Reactor">
+    <section class="hero small">
+      <p class="tag">MATH REACTOR</p>
+      <h1>Cosmic Math Reactor</h1>
+      <p class="lead">Solve equations quickly for score boosts.</p>
+    </section>
+
+    <section class="game-shell">
+      <div class="hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Time: <strong id="time">0</strong>s</span>
+        <span>Status: <strong id="status">Ready</strong></span>
+      </div>
+      <canvas id="arcade-canvas" width="760" height="500" aria-label="Cosmic Math Reactor game"></canvas>
+      <div id="arcade-panel" class="typing-panel" hidden></div>
+      <div class="controls">
+        <button id="start" class="btn">Start</button>
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/arcade-pack.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Meteor Dodger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+
+  <main class="container game-page">
+    <section class="hero small">
+      <p class="tag">METEOR DODGER</p>
+      <h1>Meteor Dodger</h1>
+      <p class="lead">Use left/right arrows or A/D to dodge falling meteors.</p>
+    </section>
+
+    <section class="game-shell">
+      <div class="hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Best: <strong id="best">0</strong></span>
+      </div>
+      <canvas id="dodger-canvas" width="420" height="560" aria-label="Meteor Dodger game board"></canvas>
+      <div class="controls">
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/dodger.js"></script>
+</body>
+</html>

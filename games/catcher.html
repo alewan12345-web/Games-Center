@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Core Catcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+
+  <main class="container game-page">
+    <section class="hero small">
+      <p class="tag">CORE CATCHER</p>
+      <h1>Core Catcher</h1>
+      <p class="lead">Catch green cores. Avoid red hazards.</p>
+    </section>
+    <section class="game-shell">
+      <div class="hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Lives: <strong id="lives">3</strong></span>
+      </div>
+      <canvas id="catcher-canvas" width="760" height="520" aria-label="Core Catcher game"></canvas>
+      <div class="controls">
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/catcher.js"></script>
+</body>
+</html>

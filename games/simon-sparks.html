@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Party | Simon Sparks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">PIXEL PARTY</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../games.html">Games</a>
+    </nav>
+  </header>
+  <main class="container game-page">
+    <section class="hero small">
+      <p class="tag">SIMON SPARKS</p>
+      <h1>Simon Sparks</h1>
+      <p class="lead">Watch the pattern, then tap it back in order.</p>
+    </section>
+    <section class="game-shell">
+      <div class="hud">
+        <span>Round: <strong id="round">1</strong></span>
+        <span>Status: <strong id="status">Press Start</strong></span>
+      </div>
+      <div class="simon-grid" id="simon-grid" aria-label="Simon Sparks game"></div>
+      <div class="controls">
+        <button id="start" class="btn">Start</button>
+        <button id="restart" class="btn">Restart</button>
+        <a class="btn" href="../games.html">Back To Games</a>
+      </div>
+    </section>
+  </main>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/simon-sparks.js"></script>
+</body>
+</html>
